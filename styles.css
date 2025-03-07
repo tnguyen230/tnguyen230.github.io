@@ -1,85 +1,81 @@
-/* Page Layout & Structure */
-body {
+/* General Styles */
+* {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    display: flex; /* or use display: grid; */
-    flex-direction: column;
-    padding: 20px;
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
-header, footer {
-    padding: 20px;
+/* Header Styles */
+.main-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1.5rem;
     text-align: center;
 }
 
-/* Navigation Menu Styling */
-nav {
-    background-color: #333;
-    padding: 10px;
+.nav-list {
+    list-style: none;
+    margin-top: 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
 }
 
-nav a {
+.nav-list a {
     color: white;
-    margin: 10px;
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: yellow;
+.nav-list a:hover {
+    color: #3498db;
 }
 
-/* Typography & Color Scheme */
-h1, h2 {
-    font-family: 'Roboto', sans-serif;
+/* Gallery Styles */
+.gallery-main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
-p {
-    line-height: 1.6;
+.gallery-main h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
 }
 
-/* Form Styling */
-input, select {
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
 }
 
-button {
-    background-color: blue;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: darkblue;
-}
-
-/* Table Styling */
-table {
+.gallery-grid img {
     width: 100%;
-    border-collapse: collapse;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
-th, td {
-    border: 1px solid black;
-    padding: 10px;
+.gallery-grid img:hover {
+    transform: scale(1.03);
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-    }
+/* Footer Styles */
+.main-footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
 }
