@@ -1,0 +1,85 @@
+/* Page Layout & Structure */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.container {
+    display: flex; /* or use display: grid; */
+    flex-direction: column;
+    padding: 20px;
+}
+
+header, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Menu Styling */
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Typography & Color Scheme */
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Form Styling */
+input, select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+}
