@@ -2,25 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Nature Explorers</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Hiking Services</title>
 </head>
 <body>
-    <header class="main-header">
-        <!-- Same navigation -->
+    <header>
+        <h1>Our Services</h1>
+        <!-- Reuse navigation from index.html -->
+        <nav role="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="services-main">
-        <h2>Guided Adventures</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <img src="images/service1.jpg" alt="Hiking tour">
-                <h3>Mountain Treks</h3>
-                <p>Expert-led hiking expeditions</p>
-            </div>
-            <!-- Add more service cards -->
-        </div>
+    <main>
+        <section id="guided-hikes">
+            <h2>Guided Hikes</h2>
+            <img src="guided-hike.jpg" alt="A group hiking with a guide" width="500">
+            <p>Perfect for beginners! Our guides will help you navigate trails safely.</p>
+        </section>
+
+        <section id="training">
+            <h2>Safety Training</h2>
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Basic Wilderness Safety</td>
+                    <td>2 hours</td>
+                    <td>$49</td>
+                </tr>
+                <tr>
+                    <td>Advanced First Aid</td>
+                    <td>4 hours</td>
+                    <td>$99</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="gear-rental">
+            <h2>Gear Rental</h2>
+            <ul>
+                <li>Hiking Backpacks: $15/day</li>
+                <li>Tents: $25/day</li>
+                <li>Trekking Poles: $10/day</li>
+            </ul>
+        </section>
     </main>
+
+    <!-- Reuse footer from index.html -->
 </body>
 </html>
