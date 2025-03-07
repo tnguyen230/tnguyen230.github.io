@@ -3,37 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hiking Adventures Gallery</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Hiking Gallery | GitHub</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <h1>Hiking Adventures Gallery</h1>
+    <header>
+        <h1>🌄 Mountain Adventures</h1>
         <nav>
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
-    
-    <main class="gallery-main">
-        <h2>Our Hiking Adventures</h2>
-        <div class="gallery-grid">
-            <img src="https://picsum.photos/600/400?random=1" alt="Mountain trail at sunrise">
-            <img src="https://picsum.photos/600/400?random=2" alt="Hikers crossing a stream">
-            <img src="https://picsum.photos/600/400?random=3" alt="Forest path in autumn">
-            <img src="https://picsum.photos/600/400?random=4" alt="Group hiking in snow">
-            <img src="https://picsum.photos/600/400?random=5" alt="Panoramic mountain view">
-            <img src="https://picsum.photos/600/400?random=6" alt="Camping at sunset">
-        </div>
+
+    <main>
+        <section id="gallery" class="gallery-grid">
+            <div class="photo-card">
+                <img src="images/mountain1.jpg" alt="Sunrise Peak">
+                <div class="photo-info">
+                    <h3>Sunrise Peak</h3>
+                    <p>Early morning hike with breathtaking views</p>
+                </div>
+            </div>
+            
+            <div class="photo-card">
+                <img src="images/mountain2.jpg" alt="Alpine Trail">
+                <div class="photo-info">
+                    <h3>Alpine Trail</h3>
+                    <p>Summer hike through wildflower meadows</p>
+                </div>
+            </div>
+
+            <!-- Add more photo cards as needed -->
+        </section>
+
+        <section id="about">
+            <h2>About Our Adventures</h2>
+            <p>Discover the beauty of mountain hiking through our curated collection of trails and vistas.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>📧 contact@hikingadventures.com</p>
+        </section>
     </main>
 
-    <footer class="main-footer">
-        <p>&copy; 2025 Hiking Adventures. All rights reserved.</p>
+    <footer>
+        <p>© 2024 Hiking Adventures. Hosted on GitHub</p>
     </footer>
 </body>
 </html>
