@@ -3,53 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature Photo Gallery</title>
+    <title>Nature Gallery | Photos</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav-container">
-            <h1 class="logo">Nature's Gallery</h1>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
+    <header>
+        <nav>
+            <h1>📸 Photo Gallery</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="main-content">
-        <section id="gallery" class="gallery-section">
-            <h2 class="section-title">Nature's Beauty</h2>
-            
-            <div class="gallery-grid">
-                <!-- Gallery Item 1 -->
-                <article class="gallery-card">
-                    <img src="images/forest.jpg" alt="Misty Forest" class="gallery-img">
-                    <div class="image-overlay">
-                        <h3 class="image-title">Misty Forest</h3>
-                        <p class="image-desc">Morning fog in the pine forest</p>
-                    </div>
-                </article>
-
-                <!-- Gallery Item 2 -->
-                <article class="gallery-card">
-                    <img src="images/mountain.jpg" alt="Snowy Peaks" class="gallery-img">
-                    <div class="image-overlay">
-                        <h3 class="image-title">Snowy Peaks</h3>
-                        <p class="image-desc">Himalayan mountain range at dawn</p>
-                    </div>
-                </article>
-
-                <!-- Add more gallery items following the same structure -->
+    <main>
+        <div class="gallery-container">
+            <div class="photo-card">
+                <img src="https://picsum.photos/400/300?nature1" alt="Mountain Landscape">
+                <p>Alpine Peaks</p>
             </div>
-        </section>
-    </main>
+            
+            <div class="photo-card">
+                <img src="https://picsum.photos/400/300?nature2" alt="Forest Path">
+                <p>Misty Forest</p>
+            </div>
 
-    <footer class="footer">
-        <p>&copy; 2024 Nature's Gallery. All rights reserved.</p>
-    </footer>
+            <!-- Add 10 total cards -->
+            <!-- Repeat the above div with different ?nature parameter -->
+        </div>
+    </main>
 </body>
 </html>
